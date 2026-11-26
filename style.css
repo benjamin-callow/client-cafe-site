@@ -1,0 +1,144 @@
+/* =========================================================
+   KangaCafe - Stylesheet
+   =========================================================
+   This one file styles EVERY page of the website.
+   Each HTML page links to it in the <head> with:
+
+     <link rel="stylesheet" href="style.css">
+
+   Change a style here and it changes on all pages.
+   Keep this file in the same folder as your HTML files.
+   ========================================================= */
+
+/* =====================================================
+   COLOURS - change them here and the whole site updates
+   ===================================================== */
+:root {
+  --main-colour: #2f5d50;    /* eucalyptus green - header, footer */
+  --accent-colour: #e8b931;  /* wattle yellow - navigation bar */
+  --background: #fbfaf6;     /* page background */
+  --text-colour: #222222;    /* normal text */
+  --light-text: #ffffff;     /* text on green areas */
+}
+
+/* =====================================================
+   BASIC PAGE SETUP
+   ===================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: var(--background);
+  color: var(--text-colour);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =====================================================
+   HEADER - logo and cafe name
+   ===================================================== */
+header {
+  background-color: var(--main-colour);
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* The logo is a link back to the Home page */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+}
+
+.logo span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* =====================================================
+   NAVIGATION BAR
+   ===================================================== */
+nav {
+  background-color: var(--accent-colour);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: block;
+  padding: 14px 20px;
+  color: var(--text-colour);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* Highlight when the mouse is over a link */
+nav a:hover,
+nav a:focus {
+  background-color: var(--main-colour);
+  color: var(--light-text);
+}
+
+/* Highlight the page you are currently on */
+nav a.active {
+  background-color: var(--main-colour);
+  color: var(--light-text);
+}
+
+/* =====================================================
+   MAIN CONTENT AREA
+   ===================================================== */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 60vh;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* =====================================================
+   ADD YOUR OWN STYLES BELOW
+   e.g. for tables, menu items, staff profiles and forms
+   ===================================================== */
+
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+footer {
+  background-color: var(--main-colour);
+  color: var(--light-text);
+  text-align: center;
+  padding: 20px;
+}
