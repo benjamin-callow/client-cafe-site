@@ -136,6 +136,7 @@ section {
 .menu-item {
   border: 1px black solid;
   text-align:center;
+  margin-block: 20px;
 }
 
 .menu-item h2, h3 {
