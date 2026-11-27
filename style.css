@@ -131,7 +131,22 @@ section {
    e.g. for tables, menu items, staff profiles and forms
    ===================================================== */
 
+/*Formatting a card for each menu item*/
 
+.menu-item {
+  border: 1px black solid;
+  text-align:center;
+}
+
+.menu-item h2, h3 {
+  line-height: 1;
+  font-size-adjust: 80%;
+  padding-block: 0px;
+}
+
+.menu-item img {
+  max-width: 200px;
+}
 
 /* =====================================================
    FOOTER
