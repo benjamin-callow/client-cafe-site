@@ -104,6 +104,7 @@ section {
 
 .staff-cards {
   display: flex;
+  overflow-x: scroll;
   
 }
 
@@ -121,7 +122,6 @@ section {
   text-align:center;
   margin:5px;
   flex: 1;
-  overflow-x: scroll;
 }
 
 .card h2, h3, h4 {
