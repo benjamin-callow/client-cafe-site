@@ -118,10 +118,11 @@ section {
 /*Formatting cards for each menu item and also staff members*/
 
 .card {
+  flex: 1;
+  width: 350px;
   border: 1px black solid;
   text-align:center;
   margin:5px;
-  flex: 1;
 }
 
 .card h2, h3, h4 {
