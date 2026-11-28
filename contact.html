@@ -2,6 +2,7 @@
 <!-- KangaCafe starter template.
      Copy this file to create menu.html, about.html and contact.html. -->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +16,13 @@
 
 <body>
 
-   <!-- Header: insert the logo here and link it to the Home page.
+  <!-- Header: insert the logo here and link it to the Home page.
        Keep on every page. -->
   <header>
-    	<a href="index.html" class="logo">
-				<img src="images/kanga-cafe-logo.png" alt="Kanga Cafe Logo" class="logo">
-			</a>
-	</header>
-
-
-
+    <a href="index.html" class="logo">
+      <img src="images/kanga-cafe-logo.png" alt="Kanga Cafe Logo" class="logo">
+    </a>
+  </header>
 
   <!-- Navigation: replace each # with the correct page link.
        Move class="active" to the link for the current page. -->
@@ -42,8 +40,19 @@
   <main>
 
     <section>
-      <h1>Page Heading</h1>
-      <p>Add the text supplied by the client here.</p>
+
+      <h1>Contact Kanga Life Cafe</h1>
+      <!-- CONTACT FORM NOT FUNCTIONAL - PLACEHOLDER ONLY - ELEVATED TO SENIOR DEVELOPER-->
+      <form>
+        <label for="name">Name: </label><br>
+        <input type="text" id="name"><br>
+        <label for="email-address">Email Address: </label><br>
+        <input type="text" id="email-address"><br>
+        <label for="message">Message: </label><br>
+        <textarea id="message" rows="4"></textarea><br>
+        <input type="submit">
+      </form>
+
     </section>
 
   </main>
@@ -54,4 +63,5 @@
   </footer>
 
 </body>
+
 </html>

@@ -131,25 +131,50 @@ section {
    e.g. for tables, menu items, staff profiles and forms
    ===================================================== */
 
-/*Formatting a card for each menu item*/
+/*parent styles for menu.html and about.html cards*/
 
-.menu-item {
-  border: 1px black solid;
-  text-align:center;
-  margin-block: 20px;
+.staff-cards {
+  display: flex;
 }
 
-.menu-item h2, h3, h4 {
+.menu-cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 35em;
+  align-content: center;
+  margin: auto;
+}
+
+/*Formatting a cards for each menu item*/
+
+.card {
+  border: 1px black solid;
+  text-align:center;
+  margin:5px;
+  flex: 1;
+}
+
+.card h2, h3, h4 {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
   font-size-adjust: 80%;
   padding-block: 0px;
 }
 
-.menu-item img {
+.card img {
   max-width: 200px;
 }
 
+/*styles for the input form on the "contact us" page*/
+
+input, textarea {
+  width: 25em;
+  resize: none;
+}
+
+input[type="submit"] {
+  width: fit-content;
+}
 /* =====================================================
    FOOTER
    ===================================================== */

@@ -2,6 +2,7 @@
 <!-- KangaCafe starter template.
      Copy this file to create menu.html, about.html and contact.html. -->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +16,13 @@
 
 <body>
 
- <!-- Header: insert the logo here and link it to the Home page.
+  <!-- Header: insert the logo here and link it to the Home page.
        Keep on every page. -->
   <header>
-    	<a href="index.html" class="logo">
-				<img src="images/kanga-cafe-logo.png" alt="Kanga Cafe Logo" class="logo">
-			</a>
-	</header>
+    <a href="index.html" class="logo">
+      <img src="images/kanga-cafe-logo.png" alt="Kanga Cafe Logo" class="logo">
+    </a>
+  </header>
 
   <!-- Navigation: replace each # with the correct page link.
        Move class="active" to the link for the current page. -->
@@ -40,30 +41,37 @@
 
     <section>
       <h1>About Kanga Life Cafe</h1>
-      <p>Since <strong>opening in 2019</strong>, KangaCafe has become a popular meeting spot for local residents and visitors. The café focuses on friendly customer service, fresh ingredients, and creating a comfortable place where people can relax, catch up with friends, or enjoy a quick meal. </p>
+      <p>Since <strong>opening in 2019</strong>, KangaCafe has become a popular meeting spot for local residents and
+        visitors. The café focuses on friendly customer service, fresh ingredients, and creating a comfortable place
+        where people can relax, catch up with friends, or enjoy a quick meal.</p>
     </section>
 
-    <section>
-      <h2>Staff Members</h2>
-      <article class="menu-item">
+
+    <h2>Staff Members</h2>
+
+    <!-- parent section class="staff-cards" creates the flex box with side-by-side 
+     cards defined by article class="card"-->
+
+    <section class="staff-cards">
+      <article class="card">
         <h3>Sarah Nguyen</h3>
         <h4>Cafe Manager</h4>
         <img src="images/sarah.svg" alt="A portrait of Sarah Nguyen.">
         <p>Sarah oversees daily operations and has over 10 years of experience in hospitality</p>
       </article>
 
-      <article class="menu-item">
+      <article class="card">
         <h3>Daniel Wilson</h3>
         <h4>Head Barista</h4>
         <img src="images/daniel.svg" alt="A portrait of Daniel Wilson.">
         <p>Daniel specialises in coffee preparation and customer service.</p>
       </article>
 
-      <article class="menu-item">
+      <article class="card">
         <h3>Mia Patel</h3>
         <h4>Kitchen Supervisor</h4>
         <img src="images/mia.svg" alt="A portrait of Mia Patel.">
-      <p>Mia manages food preparation and menu quality.</p>
+        <p>Mia manages food preparation and menu quality.</p>
       </article>
 
   </main>
@@ -74,4 +82,5 @@
   </footer>
 
 </body>
+
 </html>
