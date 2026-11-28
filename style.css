@@ -110,7 +110,6 @@ section {
   display: flex;
   flex-direction: column;
   max-width: 35em;
-  align-content: center;
   margin: auto;
 }
 
