@@ -1,18 +1,3 @@
-/* =========================================================
-   KangaCafe - Stylesheet
-   =========================================================
-   This one file styles EVERY page of the website.
-   Each HTML page links to it in the <head> with:
-
-     <link rel="stylesheet" href="style.css">
-
-   Change a style here and it changes on all pages.
-   Keep this file in the same folder as your HTML files.
-   ========================================================= */
-
-/* =====================================================
-   COLOURS - change them here and the whole site updates
-   ===================================================== */
 :root {
   --main-colour: #2f5d50;    /* eucalyptus green - header, footer */
   --accent-colour: #e8b931;  /* wattle yellow - navigation bar */
@@ -21,9 +6,6 @@
   --light-text: #ffffff;     /* text on green areas */
 }
 
-/* =====================================================
-   BASIC PAGE SETUP
-   ===================================================== */
 * {
   box-sizing: border-box;
 }
@@ -45,9 +27,6 @@ img {
   max-width: 100%;
 }
 
-/* =====================================================
-   HEADER - logo and cafe name
-   ===================================================== */
 header {
   background-color: var(--main-colour);
   padding: 15px 20px;
@@ -74,9 +53,6 @@ header {
   font-weight: bold;
 }
 
-/* =====================================================
-   NAVIGATION BAR
-   ===================================================== */
 nav {
   background-color: var(--accent-colour);
 }
@@ -112,9 +88,6 @@ nav a.active {
   color: var(--light-text);
 }
 
-/* =====================================================
-   MAIN CONTENT AREA
-   ===================================================== */
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -126,10 +99,6 @@ section {
   margin-bottom: 40px;
 }
 
-/* =====================================================
-   ADD YOUR OWN STYLES BELOW
-   e.g. for tables, menu items, staff profiles and forms
-   ===================================================== */
 
 /*parent styles for menu.html and about.html cards*/
 
@@ -145,7 +114,7 @@ section {
   margin: auto;
 }
 
-/*Formatting a cards for each menu item*/
+/*Formatting cards for each menu item and also staff members*/
 
 .card {
   border: 1px black solid;
@@ -175,9 +144,6 @@ input, textarea {
 input[type="submit"] {
   width: fit-content;
 }
-/* =====================================================
-   FOOTER
-   ===================================================== */
 footer {
   background-color: var(--main-colour);
   color: var(--light-text);
